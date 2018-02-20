@@ -1,0 +1,77 @@
+body {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.actions {
+  text-align: center;
+}
+.computer {
+  position: relative;
+}
+.computer:before,
+.computer:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  border-radius: 100%;
+}
+.computer:before {
+  top: 5px;
+  left: 5px;
+  width: 86px;
+  height: 86px;
+  background-color: #333;
+}
+.computer:after {
+  top: 10px;
+  left: 10px;
+  width: 76px;
+  height: 76px;
+  background-color: #fff;
+}
+.container {
+  width: 300px;
+  height: 300px;
+}
+.table {
+  display: flex;
+  flex-flow: row wrap;
+}
+.cell {
+  display: flex;
+  background-color: white;
+  border: 2px solid black;
+  height: 96px;
+  width: 96px;
+}
+.cell:hover {
+  border-color: red;
+}
+
+.player {
+  position: relative;
+  width: 96px;
+  height: 96px;
+}
+.player:hover {
+  opacity: 1;
+}
+.player:before,
+.player:after {
+  position: absolute;
+  left: 48px;
+  content: '';
+  height: 96px;
+  width: 5px;
+  background-color: #333;
+}
+.player:before {
+  transform: rotate(45deg);
+}
+.player:after {
+  transform: rotate(-45deg);
+}
