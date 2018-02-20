@@ -1,1 +1,1 @@
-## Simple Tick-TackToe against the computer in javascript
+## Simple Tick-Tack-Toe against the computer in javascript
